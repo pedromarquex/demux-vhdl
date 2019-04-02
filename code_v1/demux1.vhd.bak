@@ -1,0 +1,14 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY demux1 IS
+		PORT (
+				s: IN STD_LOGIC_VECTOR(1 downto 0);
+				i: IN STD_LOGIC;
+				y: OUT STD_LOGIC_VECTOR(3 downto 0)
+		);
+END demux1;
+
+ARCHITECTURE OF demux1 IS 
+BEGIN 
+		y <= "0001" 
